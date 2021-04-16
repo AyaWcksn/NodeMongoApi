@@ -20,6 +20,12 @@ Development utilities:
 * [supertest](https://www.npmjs.com/package/supertest)
   * HTTP assertions made easy via superagent.
 
+## Endpoint
+
+```
+http://localhost:6969/api/v1/items
+```
+
 ## Setup
 
 ```
