@@ -1,11 +1,15 @@
-import {requese, response} from "express"
+import {Request, Response} from "express"
+import {ItemController} from "../controllers/ItemController"
+
 
 export class Routes {
 	public routes(app): void {
+	const itemController: ItemController = new ItemController()
 		app.route('/')
-		.get((req, res) => {
+		app.route('/:id')
+		.get((req: Request,res: Response) => {
 			res.status(200).send({
-				message: "GET OK"
+				message: "GET One data"
 			})
 		})
 	}
