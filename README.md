@@ -25,6 +25,10 @@ Development utilities:
 ```
 http://localhost:6969/api/v1/items
 ```
+## TypeScript
+```
+http://localhost:6969/
+```
 
 ## Setup
 
@@ -32,19 +36,14 @@ http://localhost:6969/api/v1/items
 npm install
 ```
 
-## Lint
+## Command
 
 ```
-npm run lint
-```
-
-## Test
+npm run prod
 
 ```
 npm run test
 ```
-
-## Development
 
 ```
 npm run dev
