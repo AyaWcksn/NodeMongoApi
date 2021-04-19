@@ -2,14 +2,12 @@
 	"name": "express-api-starter",
 	"version": "1.2.0",
 	"description": " A basic starter for an express.js API",
-	"main": "index.js",
+	"main": "app.js",
 	"scripts": {
-		"start": "node src/index.js",
-		"dev": "nodemon src/index.js",
-		"tst": "ts-node ./lib/server.ts",
-		"ts": "nodemon ./dist/server.js",
-		"lint": "eslint --fix dist",
-		"test": "mocha --exit"
+		"start": "node ./dist/server.js",
+		"dev": "ts-node ./lib/server.ts",
+		"build": "tsc",
+		"prod": "npm run build && npm run start"
 	},
 	"keywords": [],
 	"author": "CJ R. <cj@null.computer> (https://w3cj.now.sh)",
