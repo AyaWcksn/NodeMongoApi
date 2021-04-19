@@ -41,10 +41,7 @@ npm install
 ```
 npm run prod
 
-```
 npm run test
-```
 
-```
 npm run dev
 ```

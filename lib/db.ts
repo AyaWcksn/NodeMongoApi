@@ -3,7 +3,7 @@ import {itemSchema} from './models/itemsModel'
 
 let db: mongoose.Connection
 
-export const connect = () => (
+export const connect = () => {
 
 	const mongoUri = "mongodb://localhost/items"
 
@@ -28,4 +28,4 @@ export const connect = () => (
     console.log("Error connecting to database");
   });
 
-)
+}
