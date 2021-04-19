@@ -2,7 +2,7 @@ import * as mongoose from 'mongoose'
 import {itemSchema} from '../models/itemsModel'
 import {Request, Response} from 'express'
 
-const Items = mongoose.model('Items', itemSchema)
+const Items = mongoose.model('items', itemSchema)
 
 export class ItemController{
 
