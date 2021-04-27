@@ -6,6 +6,7 @@ import { config as dotenv } from "dotenv"
 import morgan from "morgan";
 import compression from "compression";
 import cors from "cors";
+import swaggerUi from "swagger-ui-express";
 
 class App {
   public app: express.Application;
@@ -23,6 +24,15 @@ class App {
 		this.app.use(morgan("dev"))
 		this.app.use(compression())
 		this.app.use(cors())
+		this.app.use(
+  "/docs",
+  swaggerUi.serve,
+  swaggerUi.setup(undefined, {
+    swaggerOptions: {
+      url: "/swagger.json",
+    },
+  })
+);
 	}
   private config(): void {
     this.app.use(bodyParser.json());
