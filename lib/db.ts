@@ -5,7 +5,7 @@ let db: mongoose.Connection
 
 export const connect = () => {
 
-	const mongoUri = "mongodb://localhost/items"
+	const mongoUri = "mongodb+srv://arya:18112002@cluster0.ic7x2.mongodb.net/items?retryWrites=true&w=majority"
 
 	if (db) {
     return;

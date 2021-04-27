@@ -1,10 +1,8 @@
-import app from "./app"
-import {connect} from './db'
+import app from "./app";
 
-const PORT = 6969
+const PORT = 6969;
 
-connect()
 
 app.listen(PORT, () => {
-	console.log("Running on ", PORT)
-})
+  console.log("Running on ", PORT);
+});
